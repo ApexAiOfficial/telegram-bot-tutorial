@@ -1,0 +1,7 @@
+%% Conversation state diagram
+flowchart LR
+    Start[/Start command/] --> AskName[Ask for name]
+    AskName --> AskAge[Ask for age group]
+    AskAge --> End((End))
+    AskName --> Cancel((Cancel))
+    AskAge --> Cancel

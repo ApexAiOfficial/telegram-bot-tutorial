@@ -1,0 +1,11 @@
+%% Update lifecycle diagram
+flowchart LR
+    User([User]) -->|Send message| Telegram
+    Telegram -->|Sends update| Backend[Bot Backend]
+    Backend -->|Dispatches| Dispatcher
+    Dispatcher -->|Routes| Handler
+    Handler -->|Executes| AppLogic[App Logic]
+    AppLogic -->|Writes| State[State/Persistence]
+    AppLogic -->|Calls| BotAPI
+    BotAPI -->|Delivers message| Telegram
+    Telegram -->|Delivers response| User

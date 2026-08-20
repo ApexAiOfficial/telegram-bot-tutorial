@@ -1,0 +1,8 @@
+# Canonical dependencies for the examples in this tutorial.
+
+# The [webhooks] extra installs PTB's webhook runtime dependency (Tornado),
+# required by examples/11-webhook-deploy/bot.py and the PaaS deployment guides.
+python-telegram-bot[webhooks]==22.8
+
+# python-dotenv loads environment variables from .env files.
+python-dotenv>=1.0

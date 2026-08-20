@@ -1,0 +1,9 @@
+%% Handler routing diagram
+flowchart TD
+    Update[Update] --> Dispatcher
+    Dispatcher -->|command /start| CmdHandler[Command Handler]
+    Dispatcher -->|callback query| CbHandler[Callback Query Handler]
+    Dispatcher -->|text message| MsgHandler[Message Handler]
+    CmdHandler -->|executes| CommandLogic
+    CbHandler -->|executes| CallbackLogic
+    MsgHandler -->|executes| MessageLogic

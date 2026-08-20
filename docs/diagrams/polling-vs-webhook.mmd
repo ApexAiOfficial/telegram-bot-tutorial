@@ -1,0 +1,10 @@
+%% Polling vs. Webhook comparison
+flowchart LR
+    subgraph Polling
+        BotPolling["Your Bot (Long Polling)"] -- getUpdates --> Telegram
+        Telegram -- updates --> BotPolling
+    end
+    subgraph Webhook
+        Telegram -- update (HTTP POST) --> BotWebhook["Your Bot (Webhook Server)"]
+        BotWebhook -- 200 OK --> Telegram
+    end

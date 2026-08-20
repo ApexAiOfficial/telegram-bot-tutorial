@@ -1,0 +1,7 @@
+%% Webhook diagnostics diagram
+flowchart LR
+    Telegram -- POST update --> WebServer[Webhook server]
+    WebServer -- 200 OK --> Telegram
+    WebServer -- Logs errors --> Logs
+    Logs -->|analyse| Fixes[Check configuration]
+    Fixes -.-> WebServer

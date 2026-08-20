@@ -1,0 +1,13 @@
+%% Deployment decision tree diagram
+flowchart TD
+    Start((Start)) --> LocalDev[Local development]
+    LocalDev --> Polling[Use long polling]
+    Start --> PublicDeploy[Public deployment]
+    PublicDeploy --> Render[Render]
+    PublicDeploy --> OtherPlatforms[Other platforms]
+    Render --> Paid[Paid tier]
+    Render --> Free[Free tier (demo only)]
+    Paid --> Reliable[Production deployment]
+    Free --> Demo[Demo/testing only]
+    OtherPlatforms --> VPS[VPS/Cloud server]
+    OtherPlatforms --> AltPaaS[Other PaaS]

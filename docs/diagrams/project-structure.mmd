@@ -1,0 +1,13 @@
+%% Project structure diagram
+flowchart TD
+    Root[telegram-bot-tutorial/] --> Docs[docs/]
+    Root --> Examples[examples/]
+    Root --> Deployment[deployment/]
+    Root --> QA[qa/]
+    Docs --> Chapters[Chapters & Glossary]
+    Docs --> Diagrams[diagrams/]
+    Examples --> StageExamples[Example folders]
+    Deployment --> RenderGuide[render.md]
+    Deployment --> RailwayGuide[railway.md]
+    Deployment --> DOGuide[digitalocean-app-platform.md]
+    Deployment --> VPSGuide[vps-generic.md]

@@ -1,0 +1,27 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+
+# Editor settings
+.vscode/
+.idea/
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+
+# Secrets and environment files
+.env
+
+# Logs and temporary files
+*.log
+*.sqlite
+
+# Node modules (if any experiments use JS)
+node_modules/
+bot_data.pkl
+capstone_data.pkl
