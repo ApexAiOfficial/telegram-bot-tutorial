@@ -1,0 +1,3 @@
+# The runnable examples are the tutorial's code, not documentation. Without this,
+# GitHub's language detection skips examples/ and the repository shows no language.
+examples/** linguist-documentation=false

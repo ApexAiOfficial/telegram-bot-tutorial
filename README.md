@@ -63,6 +63,7 @@ telegram-bot-tutorial/
 ├── REVALIDATION.md         ← revalidation policy and checked sources
 ├── REVALIDATION_SNAPSHOT.md← snapshot of current versions/pricing
 ├── .gitignore              ← ignores secrets, caches and virtual envs
+├── .gitattributes          ← counts examples/ as code for GitHub's language stats
 ├── .env.example            ← template for environment variables
 ├── requirements.txt        ← Python dependencies for examples
 ├── docs/                   ← tutorial chapters and reference
